@@ -1,0 +1,30 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <title>Random Node</title>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo arredondado -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#grad)"/>
+
+  <!-- Dado estilizado no centro -->
+  <g transform="translate(32 32) rotate(-15)">
+    <rect x="-12" y="-12" width="24" height="24" rx="5" fill="white" stroke="#0f172a" stroke-width="2"/>
+    <circle cx="0" cy="0" r="3" fill="#0f172a"/>
+    <circle cx="-6" cy="-6" r="2" fill="#0f172a"/>
+    <circle cx="6" cy="6" r="2" fill="#0f172a"/>
+  </g>
+
+  <!-- Spark lines para vibe de aleatório -->
+  <path d="M14 18 L22 22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M46 14 L42 22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18 46 L22 42" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M46 46 L42 42" stroke="white" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Símbolos de range (min/max) -->
+  <path d="M20 32 q0-10 12-10" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M44 32 q0 10-12 10" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>
