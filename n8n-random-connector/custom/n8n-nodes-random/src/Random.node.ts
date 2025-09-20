@@ -80,7 +80,7 @@ async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
             throw new Error('Min and Max must be integers');
         }
         if (min > max) {
-            throw new Error('Min must be less than or equal to Max');
+            throw new Error('Min must be less than Max');
         }
 
         const url = `https://www.random.org/integers/?num=1&min=${encodeURIComponent(
