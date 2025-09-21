@@ -11,7 +11,7 @@
     "copy-resources": "if not exist dist\\resources mkdir dist\\resources && copy resources\\* dist\\resources\\",
     "dev": "tsc -w -p tsconfig.json",
     "clean": "rimraf dist",
-    "test": "node -e \"console.log('Sem testes no momento')\""
+    "test": "npm run build && node --test test/*.js"
   },
   "engines": {
     "node": ">=22.0.0"
