@@ -53,7 +53,7 @@ export class Random implements INodeType {
         name: 'max',
         type: 'number',
         typeOptions: {
-            minValue: Number.MIN_SAFE_INTEGER,
+            minValue: Number.MIN_SAFE_INTEGER + 1,
         },
         default: 60,
         description: 'Maximum integer (inclusive)',
