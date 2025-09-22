@@ -97,6 +97,9 @@ npm run dev
 ```powershell
 npm test
 ```
+- Nota (TLS nos testes): para evitar o erro SELF_SIGNED_CERT_IN_CHAIN em redes com proxy/inspeção SSL, adicionamos um setup que desabilita a validação de certificado somente durante os testes. Obs: Não utilize isso em produção.
+	- Arquivo: custom/n8n-nodes-random/test/setup.js
+	- Importado em: custom/n8n-nodes-random/test/random.node.test.js
 
 ## Integração com Random.org
 - A operação realiza um GET para `https://www.random.org/integers/` com `num=1`, repassando os limites Min/Max e solicitando retorno em texto puro.
