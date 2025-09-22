@@ -94,9 +94,9 @@ npm run dev
 		```powershell
 		cd .\n8n-random-connector\custom\n8n-nodes-random
 		```
-```powershell
-npm test
-```
+		```powershell
+		npm test
+		```
 - Nota (TLS nos testes): para evitar o erro SELF_SIGNED_CERT_IN_CHAIN em redes com proxy/inspeção SSL, adicionamos um setup que desabilita a validação de certificado somente durante os testes. Obs: Não utilize isso em produção.
 	- Arquivo: custom/n8n-nodes-random/test/setup.js
 	- Importado em: custom/n8n-nodes-random/test/random.node.test.js
