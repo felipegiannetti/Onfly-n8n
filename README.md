@@ -23,7 +23,7 @@ Conector personalizado do n8n que encapsula a API do Random.org para gerar núme
 │        │  └─ Random.node.ts       # Implementação da operação "True Random Number Generator"
 │        ├─ dist/                   # Saída compilada (gerada pelo build)
 │        └─ test/
-│           └─ random.node.test.js  # Testes de integração simples (sem mocks)
+│           └─ random.node.test.js  # Testes de integração simples
 └─ README.md                        # Este arquivo
 ```
 
